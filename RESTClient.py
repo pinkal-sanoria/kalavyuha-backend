@@ -15,6 +15,6 @@ app.add_middleware(
 
 def runServer():
     try:
-        uvicorn.run(app,host='0.0.0.0', port=10000)
+        uvicorn.run(app,host='0.0.0.0', port=8081)
     except Exception as ex:
         print(f"Error: {ex}")

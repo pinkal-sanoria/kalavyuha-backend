@@ -1,1 +1,1 @@
-web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker -b 0.0.0.0:10000 Server.init:app
+web: gunicorn main:app --host 0.0.0.0 --port 8081
