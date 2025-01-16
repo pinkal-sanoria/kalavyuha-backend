@@ -1,0 +1,12 @@
+fastapi
+pytz
+pymongo
+python-dotenv
+twilio
+tzdata
+boto3
+python-multipart
+pgeocode
+uvicorn
+bcrypt
+backports.zoneinfo
