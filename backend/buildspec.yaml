@@ -24,4 +24,5 @@ phases:
       - echo Writing container image definitions file...
       - printf '{"imagedefinitions":[{"name":"kalavyuha","imageUri":"%s"}]}' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
-    files: imagedefinitions.json
+    files: 
+      - imagedefinitions.json
