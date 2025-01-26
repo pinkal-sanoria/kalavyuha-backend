@@ -1,6 +1,7 @@
 from Server.init import app
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
+from mangum import Mangum
 
 # Add CORS middleware to allow requests from your frontend
 app.add_middleware(
@@ -10,6 +11,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+handler = Mangum(app)
 
 def runServer():
     try:

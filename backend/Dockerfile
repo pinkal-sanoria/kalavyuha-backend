@@ -1,14 +1,15 @@
 FROM python:3.9
 
-WORKDIR /app
+WORKDIR .
 
 # Copy requirements.txt first to avoid re-installing dependencies on every build
 COPY requirements.txt .
 
 # Install dependencies
 RUN pip install --upgrade pip
-RUN pip install 
-RUN python3 -m pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install pytz
+RUN pip install pymongo
 
 # Copy the rest of the application
 COPY . .

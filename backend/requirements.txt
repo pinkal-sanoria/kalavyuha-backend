@@ -9,4 +9,4 @@ python-multipart
 pgeocode
 uvicorn
 bcrypt
-backports.zoneinfo
+mangum
